@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--*************************task1***********************************-->
+<!-- <script>
+function openWin() {
+  myWindow = window.open('', '', 'width=300, height=300');    
+  myWindow.focus();   
+}
+
+function resizeWin() {
+  myWindow.resizeTo(500, 500);                            
+  myWindow.focus();                                       
+}
+
+function moveWin() {
+  myWindow.moveTo(200, 200);                                  
+  myWindow.focus();                                           
+}
+
+function closeWin() {
+  myWindow.close();   
+}
+
+openWin();
+
+setTimeout(() => {
+    moveWin();
+}, 2000);
+
+setTimeout(() => {
+    resizeWin();
+}, 4000);
+
+setTimeout(() => {
+    closeWin();
+}, 6000);
+
+</script> -->
+
+<!--*************************task2***********************************-->
+
+<!-- <p id ='text'>I learning JavaScript events!</p> 
+<div>
+	<button onclick="changeCSS()" >Change style!</button>
+</div>
+
+<script>
+
+let btn = document.getElementsByTagName("button")[0];
+
+function changeCSS(click){
+    return text.style = "color: orange; font-size: 20px; font-family: Comic Sans MS "
+}
+
+</script> -->
+
+
+<!--*************************task3***********************************-->
+
+<!-- <form  id="form">
+    <button id = "btn1" onclick="changeBack('blue')">Click to make page blue</button>
+    <button id = "btn2" ondblclick="changeBack('pink')">Double-click to make page pink</button>
+    <button id = "btn3" onmousedown="changeBack('brown')" onmouseup="changeBack('snow')">Click to hold to make </button>
+    <a href="#" onmouseover="changeBack('yellow')">Hover over to make page yellow</a>
+</form>
+
+<script>
+form.style = "padding:10px; position:absolute; background-color:yellow";
+function changeBack(color) {
+   form.style.backgroundColor = color;
+} 
+</script> -->
+
+<!--*************************task4***********************************-->
+
+    <!-- <select id="names">
+        <option value="peter">Peter</option>
+        <option value="john">John</option>
+        <option value="alise">Alise</option>
+        <option value="alex">Alex</option>
+        <option value="iren">Iren</option>
+    </select>
+    <button id="btn" onclick="removeSelected()">Choose and Delete</button>    
+
+<script>
+function removeSelected() {
+
+    names.removeChild(names.options[names.selectedIndex]);
+
+}
+  
+</script> -->
+
+<!--*************************task5***********************************-->
+
+
+<!-- <button onclick="createEl('I was pressed')", onmouseover = "createEl('Mouse is on me!')", onmouseout="createEl('Mouse is not on me!')">Live button!</button>
+
+<script>
+
+    function createEl(message) {
+        var h = document.createElement('h3');
+        h.innerHTML = message;
+        document.body.appendChild(h);
+    }
+ 
+</script> -->
+
+<!--*************************task6***********************************-->
+<!-- <h1 id="demo"></h1>
+
+<script>
+
+(function() {
+  window.onresize = windowSize;
+  window.onload = windowSize;
+
+  function windowSize() {
+    let myWidth = window.innerWidth;
+    let myHeight = window.innerHeight;
+   
+    document.getElementById("demo").innerHTML = "Width: " + myWidth + " , " +"Height: "+ myHeight;
+  };
+
+
+})();
+
+</script> -->
+
+ <!--*************************task7***********************************-->
+
+ <!-- <select name="country" id="country">
+	<option value="ger">Germany</option>
+	<option value="usa">USA</option>
+	<option value="ukr">Ukraine</option>
+</select>
+                    
+<select name="cities" id="cities" ></select>
+<p></p>
+
+ <script>
+   let countriesSelect = document.querySelector('#country');
+   let citiesSelect = document.querySelector('#cities');
+
+   let data = {
+     ger:["Berlin", "Dusseldorf", "Hamburg"],
+     usa:["Chicago", "NewYork", "LasVegas"],
+     ukr:["Lviv", "Lutsk", "Ternopil"]
+   }
+
+   countriesSelect.addEventListener('change', function(){
+      var cities = data[this.value];
+      citiesSelect.length = 0;
+
+      for (let i = 0; i < cities.length; i++) {
+        citiesSelect.add(new Option(cities[i]));
+      }
+   })  -->
+
+ </script>
+</body>
+</html>
