@@ -162,6 +162,10 @@ function removeSelected() {
       for (let i = 0; i < cities.length; i++) {
         citiesSelect.add(new Option(cities[i]));
       }
+
+      var currentCountry = countriesSelect.options[countriesSelect.selectedIndex].innerHTML;
+      let currentCity = citiesSelect.options[citiesSelect.selectedIndex].innerHTML;
+      p.innerHTML = "Country: " + currentCountry + " , City: " + currentCity;
    })  -->
 
  </script>
