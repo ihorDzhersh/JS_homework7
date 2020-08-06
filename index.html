@@ -166,6 +166,12 @@ function removeSelected() {
       var currentCountry = countriesSelect.options[countriesSelect.selectedIndex].innerHTML;
       let currentCity = citiesSelect.options[citiesSelect.selectedIndex].innerHTML;
       p.innerHTML = "Country: " + currentCountry + " , City: " + currentCity;
+
+      citiesSelect.addEventListener('change', function(){
+        var chooseAnotherCity = citiesSelect.options[citiesSelect.selectedIndex].innerHTML;
+        p.innerHTML = "Country: " + currentCountry + " , City: " + chooseAnotherCity;
+      })
+      
    })  -->
 
  </script>
